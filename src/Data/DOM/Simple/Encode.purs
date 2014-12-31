@@ -9,9 +9,9 @@ foreign import encodeURI :: String -> String
 foreign import decodeURI :: String -> String
 
 -- | Given an object, convert it into URL parameters.
-foreign import paramatize
+foreign import parameterize
   """
-  function paramatize(obj) {
+  function parameterize(obj) {
     return Object.keys(obj).map(function(key) {
       return key + '=' + encodeURIComponent(obj[key]);
     }).join('&');

@@ -172,7 +172,7 @@
 
     encodeURIComponent :: String -> String
 
-    paramatize :: forall a. a -> String
+    parameterize :: forall a. a -> String
 
     toJsonString :: forall eff a. a -> Eff (dom :: DOM | eff) String
 
